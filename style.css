@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+body{
+    display: grid;
+    place-content: center;
+    height: 100vh;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 3px;
+    background-color: #000;
+}
+
+.cell{
+    width: clamp(5rem, 8rem, 12rem);
+    height: clamp(5rem, 8rem, 12rem);
+    background-color: #fff;
+}
+
+.cell:hover{
+    cursor: pointer;
+}
+
+#win-section{
+    display: flex;
+    justify-content: center;
+    margin-top: 5rem;
+}
+
+#win-section button{
+    width: 5rem;
+    height: 3rem;
+}
