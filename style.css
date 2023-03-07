@@ -18,9 +18,12 @@ body{
 }
 
 .cell{
-    width: clamp(5rem, 8rem, 12rem);
-    height: clamp(5rem, 8rem, 12rem);
+    width: 8rem;
+    height: 8rem;
     background-color: #fff;
+    font-size: 3rem;
+    text-align: center;
+    line-height: 8rem;
 }
 
 .cell:hover{
@@ -29,8 +32,11 @@ body{
 
 #win-section{
     display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
     margin-top: 5rem;
+    gap: 2rem;
 }
 
 #win-section button{
